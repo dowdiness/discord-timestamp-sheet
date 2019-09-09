@@ -1,0 +1,23 @@
+{
+  "name": "attendance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "koji ishimoto",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.1.0",
+    "date-fns": "^2.1.0",
+    "date-fns-tz": "^1.0.7",
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.1.0",
+    "google-spreadsheet": "^2.0.8",
+    "googleapis": "39"
+  },
+  "scripts": {
+    "deploy": "now -e discord_token=@discord_token -e sheet_client_email=@sheet_client_email -e sheet_private_key=@sheet_private_key -e sheet_key_id=@sheet_key_id",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
