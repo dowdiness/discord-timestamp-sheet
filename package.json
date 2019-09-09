@@ -15,7 +15,7 @@
   },
   "scripts": {
     "deploy": "now -e discord_token=@discord_token -e sheet_client_email=@sheet_client_email -e sheet_private_key=@sheet_private_key -e sheet_key_id=@sheet_key_id",
-    "start": "node index.js"
+    "start": "node index.js -e discord_token=@discord_token -e sheet_client_email=@sheet_client_email -e sheet_private_key=@sheet_private_key -e sheet_key_id=@sheet_key_id"
   },
   "engines": {
     "node": "10.x"
