@@ -53,6 +53,6 @@ client.on('message', async(msg) => {
       '打刻タイプ': '退勤'
     }
     spreadsheet(payload)
-    msg.reply(`${msg.author.username}は${formatedJpDate}に出勤しました`)
+    msg.reply(`${msg.author.username}は${formatedJpDate}に退勤しました`)
   }
 })
